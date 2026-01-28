@@ -1,0 +1,89 @@
+/* ล้างค่าพื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ตกแต่ง Card */
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 500px;
+    transition: transform 0.3s ease;
+}
+
+.card1 {
+    background: rgb(255, 151, 151);
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: left;
+    width: 1000px;
+    height: 540px;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* ตกแต่งรูปภาพ */
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #da4c56;
+    margin-bottom: 1.5rem;
+}
+
+/* ตกแต่งข้อความ */
+.name {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.intro {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+
+.id-number {
+    color: #777;
+    margin-bottom: 1.5rem;
+}
+
+/* ตกแต่งปุ่ม */
+.btn-action {
+    background-color: #fb656f;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-action:hover {
+    background-color: #da4c56;
+    transform: scale(1.05);
+}
+
+.btn-action:active {
+    transform: scale(0.95);
+}
